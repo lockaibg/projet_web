@@ -1,0 +1,11 @@
+@for (main of different_mains.getMains(); track $index) {
+  <div class="main">
+    <h3>{{ main.nom }}</h3>
+    <div class="cartes">
+      <div *ngFor="let carte of main.cartes" class="carte">
+        {{ carte.valeur }} de {{ carte.couleur }}
+        <!-- afficher l'image de la carte dans le futur -->
+      </div>
+    </div>
+  </div>
+}

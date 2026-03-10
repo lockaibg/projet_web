@@ -1,1 +1,35 @@
-<p>equity-calculator works!</p>
+<form [formGroup]="equityForm">
+  <div class="form-group">
+    <label for="outs">Nombre d'outs:</label>
+    <input type="number" id="outs" formControlName="outs" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="chances">Nombre de cartes à venir:</label>
+    <input type="number" id="chances" formControlName="chances" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="montantPot">Montant du pot:</label>
+    <input type="number" id="montantPot" formControlName="montantPot" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="montantMise">Montant de la mise:</label>
+    <input type="number" id="montantMise" formControlName="montantMise" class="form-control">
+  </div>
+  <button type="submit" (click)="calculateEquity()" [disabled]="equityForm.invalid" class="btn btn-primary">
+    @if (!montantMiseIn) {
+      Calculer la mise maximale
+    }
+    @else {
+      Calculer le gain potentiel
+    }
+  </button>
+</form>
+
+<div *ngIf="equity !== undefined">
+  <p>Equity: {{ equity | number:'1.2-2' }}%</p>
+
+    <p>Mise maximale recommandée: {{ retourne | number:'1.2-2' }}</p>
+  @if(montantMiseIn) {
+    <p *ngIf="montantMiseIn">Gain potentiel: {{ retourne | number:'1.2-2' }}</p>
+  }
+</div>
