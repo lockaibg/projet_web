@@ -15,7 +15,8 @@ export class CarteService {
       for (let valeur = 1; valeur <= 13; valeur++) {
         this.cartes.push({
           valeur: valeur,
-          couleur: couleur
+          couleur: couleur,
+          img: `assets/cartes/${valeur}${couleur}.png`
         });
       }
     }
@@ -23,6 +24,10 @@ export class CarteService {
 
   getCarte(): Carte[] {
     return this.cartes;
+  }
+
+  getCarteByValueAndColor(valeur: number, couleur: string): Carte {
+    return this.cartes.find(carte => carte.valeur === valeur && carte.couleur === couleur) || this.cartes[0];
   }
 
 }
