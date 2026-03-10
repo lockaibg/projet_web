@@ -6,18 +6,20 @@ import { App } from './app';
 import { Carte } from './model/carte';
 import { Main } from './main/main';
 import { EquityCalculator } from './equity-calculator/equity-calculator';
-import { Header } from './header/header';
-import { Body } from './body/body';
 import { Joueurs } from './joueurs/joueurs';
+import { TesgtPipe } from './tesgt-pipe';
+import { Accueil } from './accueil/accueil';
+import { Navigation } from './navigation/navigation';
 
 @NgModule({
   declarations: [
     App,
     Main,
     EquityCalculator,
-    Header,
-    Body,
-    Joueurs
+    Joueurs,
+    TesgtPipe,
+    Accueil,
+    Navigation
   ],
   imports: [
     BrowserModule,
