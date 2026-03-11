@@ -12,14 +12,14 @@ export class MainService {
 
   constructor() {
     this.mains = [
-      { cartes: [this.carteService.getCarteByValueAndColor(1, "coeur"), this.carteService.getCarteByValueAndColor(1, "pique")], nom: "paire" },
-      { cartes: [this.carteService.getCarteByValueAndColor(2, "carreau"), this.carteService.getCarteByValueAndColor(2, "trefle"), this.carteService.getCarteByValueAndColor(2, "coeur")], nom: "brelan" },
-      { cartes: [this.carteService.getCarteByValueAndColor(3, "coeur"), this.carteService.getCarteByValueAndColor(4, "trefle"), this.carteService.getCarteByValueAndColor(3, "pique"), this.carteService.getCarteByValueAndColor(4, "carreau")], nom: "double-paire" },
-      { cartes: [this.carteService.getCarteByValueAndColor(5, "coeur"), this.carteService.getCarteByValueAndColor(6, "trefle"), this.carteService.getCarteByValueAndColor(7, "pique"), this.carteService.getCarteByValueAndColor(8, "carreau"), this.carteService.getCarteByValueAndColor(9, "coeur")], nom: "suite" },
-      { cartes: [this.carteService.getCarteByValueAndColor(10, "coeur"), this.carteService.getCarteByValueAndColor(11, "coeur"), this.carteService.getCarteByValueAndColor(2, "coeur"), this.carteService.getCarteByValueAndColor(7, "coeur"), this.carteService.getCarteByValueAndColor(1, "coeur")], nom: "couleur" },
-      { cartes: [this.carteService.getCarteByValueAndColor(12, "coeur"), this.carteService.getCarteByValueAndColor(12, "trefle"), this.carteService.getCarteByValueAndColor(12, "pique"), this.carteService.getCarteByValueAndColor(13, "coeur"), this.carteService.getCarteByValueAndColor(13, "trefle")], nom: "full-house" },
-      { cartes: [this.carteService.getCarteByValueAndColor(11, "coeur"), this.carteService.getCarteByValueAndColor(11, "trefle"), this.carteService.getCarteByValueAndColor(11, "pique"), this.carteService.getCarteByValueAndColor(11, "carreau")], nom: "carre" },
-      { cartes: [this.carteService.getCarteByValueAndColor(9, "coeur"), this.carteService.getCarteByValueAndColor(10, "coeur"), this.carteService.getCarteByValueAndColor(11, "coeur"), this.carteService.getCarteByValueAndColor(12, "coeur"), this.carteService.getCarteByValueAndColor(13, "coeur")], nom: "straight-flush" }
+      { cartes: [this.carteService.getCarteByValueAndColor(1, "hearts"), this.carteService.getCarteByValueAndColor(1, "spades")], nom: "paire" },
+      { cartes: [this.carteService.getCarteByValueAndColor(1, "diamonds"), this.carteService.getCarteByValueAndColor(1, "spades"), this.carteService.getCarteByValueAndColor(1, "hearts")], nom: "brelan" },
+      { cartes: [this.carteService.getCarteByValueAndColor(1, "hearts"), this.carteService.getCarteByValueAndColor(1, "clubs"), this.carteService.getCarteByValueAndColor(13, "spades"), this.carteService.getCarteByValueAndColor(13, "clubs")], nom: "double-paire" },
+      { cartes: [this.carteService.getCarteByValueAndColor(1, "hearts"), this.carteService.getCarteByValueAndColor(2, "clubs"), this.carteService.getCarteByValueAndColor(3, "spades"), this.carteService.getCarteByValueAndColor(4, "diamonds"), this.carteService.getCarteByValueAndColor(5, "hearts")], nom: "suite" },
+      { cartes: [this.carteService.getCarteByValueAndColor(10, "hearts"), this.carteService.getCarteByValueAndColor(11, "hearts"), this.carteService.getCarteByValueAndColor(2, "hearts"), this.carteService.getCarteByValueAndColor(7, "hearts"), this.carteService.getCarteByValueAndColor(1, "hearts")], nom: "couleur" },
+      { cartes: [this.carteService.getCarteByValueAndColor(12, "hearts"), this.carteService.getCarteByValueAndColor(12, "clubs"), this.carteService.getCarteByValueAndColor(12, "spades"), this.carteService.getCarteByValueAndColor(13, "hearts"), this.carteService.getCarteByValueAndColor(13, "clubs")], nom: "full-house" },
+      { cartes: [this.carteService.getCarteByValueAndColor(11, "hearts"), this.carteService.getCarteByValueAndColor(11, "clubs"), this.carteService.getCarteByValueAndColor(11, "spades"), this.carteService.getCarteByValueAndColor(11, "diamonds")], nom: "carre" },
+      { cartes: [this.carteService.getCarteByValueAndColor(9, "hearts"), this.carteService.getCarteByValueAndColor(10, "hearts"), this.carteService.getCarteByValueAndColor(11, "hearts"), this.carteService.getCarteByValueAndColor(12, "hearts"), this.carteService.getCarteByValueAndColor(13, "hearts")], nom: "straight-flush" }
     ]
   }
 

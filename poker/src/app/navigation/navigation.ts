@@ -10,7 +10,7 @@ export class Navigation implements OnInit {
   pages!: string[];
   ngOnInit(): void {
     this.pages = [
-      "acceuil",
+      "accueil",
       "joueurs",
       "calculateur d'équité",
       "mains"

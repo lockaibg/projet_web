@@ -1,0 +1,75 @@
+/* Le conteneur principal qui va espacer les îlots */
+.liste_mains {
+  display: flex;
+  flex-wrap: wrap; /* Pour passer à la ligne si pas assez de place */
+  gap: 20px; /* Espace entre les îlots */
+  padding: 20px;
+  background-color: #f0f2f5; /* Un fond gris léger pour faire ressortir les îlots blancs */
+  min-height: 100vh;
+}
+
+/* L'îlot (chaque main) */
+.main {
+  background: white;
+  border-radius: 15px; /* Coins arrondis */
+  padding: 20px;
+  min-width: 300px;
+  flex: 1; /* Permet aux îlots de s'adapter en largeur */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* L'ombre qui crée l'effet d'île */
+  border: 1px solid #e1e4e8;
+  transition: transform 0.2s; /* Petit effet au survol */
+}
+
+.main:hover {
+  transform: translateY(-5px); /* L'îlot se soulève un peu au survol */
+}
+
+/* Le titre de la main */
+h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+}
+
+/* Conteneur des cartes à l'intérieur de l'îlot */
+.liste_cartes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Style temporaire pour les cartes (en attendant tes images) */
+.carte {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.9rem;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.carte span {
+  font-size: 0.7rem;
+  color: #888;
+}
+.carte img {
+  width: 80px;      /* Largeur fixe pour que toutes les cartes soient pareilles */
+  height: auto;     /* Garde les proportions */
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Un petit relief sur la carte elle-même */
+  display: block;   /* Évite les espaces bizarres sous l'image */
+}
+
+/* On aligne les cartes horizontalement dans la main */
+.liste_cartes {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
