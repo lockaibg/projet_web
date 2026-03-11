@@ -28,8 +28,8 @@
 <div *ngIf="equity !== undefined">
   <p>Equity: {{ equity | number:'1.2-2' }}%</p>
 
-    <p>Mise maximale recommandée: {{ retourne | number:'1.2-2' }}</p>
+    <p>Mise maximale recommandée: {{ maxBet | number:'1.2-2' }}</p>
   @if(montantMiseIn) {
-    <p *ngIf="montantMiseIn">Gain potentiel: {{ retourne | number:'1.2-2' }}</p>
+    <p *ngIf="montantMiseIn">Gain potentiel: {{ potentialGain | number:'1.2-2' }}</p>
   }
 </div>

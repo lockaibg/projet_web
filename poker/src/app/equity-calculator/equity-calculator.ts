@@ -10,7 +10,8 @@ import {FormBuilder, FormGroup, isFormRecord, Validators} from "@angular/forms";
 export class EquityCalculator implements OnInit {
   nbOuts!: number; // nombre de cartes qui peuvent améliorer la main du joueur
   nbChances!: number; // nombre de chances de toucher une carte gagnante
-  retourne!: number;
+  potentialGain!: number;
+  maxBet!: number;
   equity!: number; // pourcentage de chances de gagner la main
   montantPot!: number; // montant total du pot
   montantMise!: number; // montant de la mise actuelle
@@ -42,10 +43,10 @@ export class EquityCalculator implements OnInit {
       this.equity = 1 - ((47 - this.nbOuts) / 47) * ((46 - this.nbOuts) / 46);
       this.equity *= 100;
     }
+    //TODO: utiliser une pipe pour ça potentiellement
     if(this.montantMiseIn) {
-      this.retourne = this.equity/100 * this.montantPot - this.montantMise;
-    } else {
-      this.retourne = this.equity/100 * this.montantPot;
+      this.potentialGain = this.equity/100 * this.montantPot - this.montantMise;
     }
+    this.maxBet = this.equity/100 * this.montantPot;
   }
 }
