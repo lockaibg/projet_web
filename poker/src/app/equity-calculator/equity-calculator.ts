@@ -42,6 +42,8 @@ export class EquityCalculator implements OnInit {
     } else if(this.nbChances == 2) {
       this.equity = 1 - ((47 - this.nbOuts) / 47) * ((46 - this.nbOuts) / 46);
       this.equity *= 100;
+    } else {
+      this.equity = 0;
     }
     //TODO: utiliser une pipe pour ça potentiellement
     if(this.montantMiseIn) {

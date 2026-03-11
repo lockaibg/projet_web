@@ -1,3 +1,40 @@
-<h1>{{ titre }}</h1>
-<p>{{presentation}}</p>
-<img [src] = "img" [alt] = "desc"/>
+<div class="hero">
+
+  <div class="hero-content">
+
+    <h1>{{ titre }}</h1>
+
+    <h2>{{ slogan }}</h2>
+
+    <img [src]="imageHero" alt="table de poker">
+
+    <p>
+      {{ description }}
+    </p>
+
+    <button routerLink="/regles">
+      Découvrir les règles
+    </button>
+
+  </div>
+
+</div>
+
+<div class="features">
+
+  <div class="feature">
+    <h3>♠ calculateur d'équité</h3>
+    <p>Calculez votre équité dans différentes situations de jeu.</p>
+  </div>
+
+  <div class="feature">
+    <h3>♥ Les joueurs</h3>
+    <p>Découvrez les joueurs phares du jeu.</p>
+  </div>
+
+  <div class="feature">
+    <h3>♦ Les mains</h3>
+    <p>Comprenez la valeur des mains et comment gagner vos parties.</p>
+  </div>
+
+</div>

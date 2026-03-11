@@ -9,15 +9,20 @@ import { OnInit } from '@angular/core';
 })
 export class Accueil implements OnInit{
   titre!: string;
-  presentation!: string;
-  img!: string;
-  desc!: string;
+  slogan!: string;
+  imageHero!: string;
+  description!: string;
 
   ngOnInit(): void {
-    this.titre = "Bienvenu venez faire du poker";
-    this.presentation = "bla bla bla bla bla";
-    this.img = "https://tse4.mm.bing.net/th/id/OIP._NF_QfnfUxQdpWkxvyz7ygHaE8?pid=Api";
-    this.desc = "adrian content";
+
+    this.titre = "Poker Master";
+
+    this.slogan = "Entrez dans l'univers du Texas Hold'em";
+
+    this.imageHero = "https://images.unsplash.com/photo-1511512578047-dfb367046420";
+
+    this.description =
+      "Bienvenue sur Poker Master. Découvrez les règles du poker, améliorez vos stratégies et plongez dans l’univers du Texas Hold'em. Que vous soyez débutant ou joueur confirmé, ce site vous aidera à progresser et à comprendre toutes les subtilités du jeu.";
   }
 
 }
