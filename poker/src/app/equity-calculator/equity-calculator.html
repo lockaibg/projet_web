@@ -33,12 +33,12 @@
   }
   @else{
     <div [ngStyle]="{'color': qualityEquity}">
-      <p>Equity: {{ equity | number:'1.2-2' }}%</p>
+      <p>Equity: {{ equity | pokerNumber:'%' }}</p>
     </div>
     <div class="infos-resultat">
-    <p>Mise maximale recommandée: {{ maxBet | number:'1.2-2' }}</p>
+    <p>Mise maximale recommandée: {{ maxBet | pokerNumber:'BB' }}</p>
     @if(montantMiseIn) {
-      <p> Gain potentiel: {{ potentialGain | number:'1.2-2' }}</p>
+      <p> Gain potentiel: {{ potentialGain | pokerNumber:'BB' }}</p>
     }
     </div>
   }

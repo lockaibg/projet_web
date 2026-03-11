@@ -11,6 +11,7 @@ import { TesgtPipe } from './tesgt-pipe';
 import { Accueil } from './accueil/accueil';
 import { Header } from './header/header';
 import { Mains } from './mains/mains';
+import { PokerNumberPipe } from './pipes/poker-number-pipe';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { Mains } from './mains/mains';
     TesgtPipe,
     Accueil,
     Header,
-    Mains
+    Mains,
+    PokerNumberPipe
   ],
   imports: [
     BrowserModule,
