@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-navigation',
+  selector: 'app-header',
   standalone: false,
-  templateUrl: './navigation.html',
-  styleUrl: './navigation.scss',
+  templateUrl: './header.html',
+  styleUrl: './header.scss',
 })
-export class Navigation implements OnInit {
+export class Header implements OnInit {
   pages!: string[];
+
   ngOnInit(): void {
     this.pages = [
       "accueil",

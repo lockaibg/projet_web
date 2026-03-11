@@ -1,6 +1,6 @@
 <div class="liste_mains">
   @for(main of different_mains.getMains(); track main.nom) {
-    <div class="main">
+    <div (click)=afficherInfos(main) class="main">
       <h3>{{ main.nom }}</h3>
       <div class="liste_cartes">
         @for(carte of main.cartes; track carte.valeur) {
@@ -9,9 +9,7 @@
           </div>
         }
       </div>
-      @if (mainDetails == main){
-
-      }
+      <span class="infos">{{main.description}}</span>
     </div>
   }
 </div>

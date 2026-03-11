@@ -9,7 +9,7 @@ import { EquityCalculator } from './equity-calculator/equity-calculator';
 import { Joueurs } from './joueurs/joueurs';
 import { TesgtPipe } from './tesgt-pipe';
 import { Accueil } from './accueil/accueil';
-import { Navigation } from './navigation/navigation';
+import { Header } from './header/header';
 import { Mains } from './mains/mains';
 
 
@@ -20,7 +20,7 @@ import { Mains } from './mains/mains';
     Joueurs,
     TesgtPipe,
     Accueil,
-    Navigation,
+    Header,
     Mains
   ],
   imports: [
