@@ -8,7 +8,7 @@ import { Mains } from './mains/mains';
 
 
 const routes: Routes = [
-  { path: '', component: App },
+  { path: '', redirectTo: '/accueil',pathMatch: 'full' },
   { path: 'accueil', component: Accueil},
   { path: 'equity-calculator', component: EquityCalculator},
   { path: 'joueurs', component: Joueurs},

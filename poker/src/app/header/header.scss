@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+
+/* Container du titre */
+.titre {
+  padding: 40px 20px;
+  font-family: 'Balatro', serif;
+  text-align: center;
+  background: linear-gradient(135deg, #0d0d0d 0%, #2c3e50 100%); // Linear gradient cree un degradé en fond
+  border-bottom: 3px solid #27ae60; // une ligne verte en mode table poker
+}
+
+.titre h1 {
+  margin: 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: seagreen;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Style des boutons (basé sur ta classe btn-info) */
+.btn-info {
+  /* 1. On donne de l'air aux lettres */
+  letter-spacing: 2px;
+
+  /* 2. On augmente l'espace interne (Haut/Bas Gauche/Droite) */
+  padding: 12px 25px;
+
+  /* 3. On change les couleurs pour coller au thème Poker/Balatro */
+  background-color: #000000 !important; /* Fond noir profond */
+  color: #ffffff !important;           /* Texte blanc (ou #f1c40f pour de l'or) */
+  border: 1px solid #444 !important;    /* Bordure discrète */
+
+  /* 4. On s'assure que le texte ne revient pas à la ligne */
+  white-space: nowrap;
+
+  /* 5. Un peu de style */
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-radius: 2px; /* Bords presque carrés pour le côté classe */
+  transition: all 0.3s ease;
+}
+
+/* L'effet au survol qui change tout */
+.btn-info:hover {
+  background-color: #e74c3c !important; /* Un rouge plus "Casino" au survol */
+  color: white !important;
+  border-color: #e74c3c !important;
+  box-shadow: 0 0 15px rgba(231, 76, 60, 0.4);
+  transform: translateY(-2px);
+}
+.btn-info, nav a {
+  font-family: 'Balatro', serif !important;
+  font-weight: 400; /* Pour qu'ils soient bien lisibles */
+  text-transform: none; /* Pour éviter les majuscules forcées si tu n'en veux pas */
+}
+
+
+/* État actif (quand on clique/est sur la page) */
+.btn-info:active {
+  transform: translateY(-1px);
+}
+
+.btn-info {
+    width: 80%;
+    text-align: center;
+}
+

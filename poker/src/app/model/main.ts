@@ -2,8 +2,10 @@ import { Carte } from './carte';
 export class Main {
   nom:string;
   cartes: Carte[];
-  constructor(cartes: Carte[], nom: string) {
+  description: string;
+  constructor(cartes: Carte[], nom: string, description: string) {
     this.cartes = cartes;
     this.nom = nom;
+    this.description = description;
   }
 }
