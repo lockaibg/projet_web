@@ -1,3 +1,4 @@
+<div class="page-equity">
 <form [formGroup]="equityForm">
   <div class="form-group">
     <label for="outs">Nombre d'outs:</label>
@@ -31,12 +32,16 @@
     <p>Le nombre de cartes à venir ne peut être que de 1 ou 2.</p>
   }
   @else{
-    <p>Equity: {{ equity | number:'1.2-2' }}%</p>
-
+    <div [ngStyle]="{'color': qualityEquity}">
+      <p>Equity: {{ equity | number:'1.2-2' }}%</p>
+    </div>
+    <div class="infos-resultat">
     <p>Mise maximale recommandée: {{ maxBet | number:'1.2-2' }}</p>
     @if(montantMiseIn) {
       <p> Gain potentiel: {{ potentialGain | number:'1.2-2' }}</p>
     }
+    </div>
   }
 </div>
 }
+</div>

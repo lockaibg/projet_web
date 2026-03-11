@@ -1,14 +1,16 @@
+::ng-deep body {
+  background-color: #1a1a1a !important;
+}
 
 form {
   max-width: 500px;
   margin: 40px auto;
-  background: #1a1a1a;
+  background: #111;
   padding: 30px;
   border-radius: 12px;
-  border: 2px solid #444;
+  border: 2px solid #333;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
-
 
 .form-group {
   margin-bottom: 20px;
@@ -82,9 +84,11 @@ label {
 }
 
 .resultats p {
-  color: white;
   margin: 10px 0;
   font-size: 1.2rem;
+}
+.infos-resultat p {
+  color: white;
 }
 
 .resultats span {

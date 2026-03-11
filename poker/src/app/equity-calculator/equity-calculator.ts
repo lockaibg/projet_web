@@ -18,6 +18,8 @@ export class EquityCalculator implements OnInit {
   montantMiseIn!: boolean;
   equityForm!: FormGroup;
 
+  qualityEquity!: string;
+
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
@@ -54,5 +56,12 @@ export class EquityCalculator implements OnInit {
       this.potentialGain = this.equity/100 * this.montantPot - this.montantMise;
     }
     this.maxBet = this.equity/100 * this.montantPot;
+    this.changeColorEquity();
+  }
+
+  changeColorEquity() {
+    let red: number = Math.round(((100 - this.equity) / 100) * 255);
+    let green: number = Math.round((this.equity / 100) * 255);
+    this.qualityEquity = `rgb(`+red+`,`+green+`,0)`;
   }
 }
