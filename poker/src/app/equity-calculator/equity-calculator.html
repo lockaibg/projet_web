@@ -27,11 +27,16 @@
 
 @if (equity !== undefined) {
 <div class="resultats" >
-  <p>Equity: {{ equity | number:'1.2-2' }}%</p>
+  @if(equity == -1){
+    <p>Le nombre de cartes à venir ne peut être que de 1 ou 2.</p>
+  }
+  @else{
+    <p>Equity: {{ equity | number:'1.2-2' }}%</p>
 
     <p>Mise maximale recommandée: {{ maxBet | number:'1.2-2' }}</p>
-  @if(montantMiseIn) {
-    <p> Gain potentiel: {{ potentialGain | number:'1.2-2' }}</p>
+    @if(montantMiseIn) {
+      <p> Gain potentiel: {{ potentialGain | number:'1.2-2' }}</p>
+    }
   }
 </div>
 }

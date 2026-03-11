@@ -1,31 +1,31 @@
-/* Conteneur du formulaire */
+
 form {
   max-width: 500px;
   margin: 40px auto;
-  background: #1a1a1a; /* Fond sombre */
+  background: #1a1a1a;
   padding: 30px;
   border-radius: 12px;
   border: 2px solid #444;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* Groupe de champ (Label + Input) */
+
 .form-group {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
 }
 
-/* Style des labels */
+
 label {
   font-family: 'Balatro', cursive !important;
-  color: #f1c40f; /* Couleur Or */
+  color: #f1c40f;
   margin-bottom: 8px;
   letter-spacing: 1px;
   font-size: 1.1rem;
 }
 
-/* Style des inputs */
+
 .form-control {
   background: #0b0b0b !important;
   border: 1px solid #444 !important;
@@ -38,23 +38,15 @@ label {
 }
 
 .form-control:focus {
-  border-color: #27ae60 !important; /* Vert au focus */
+  border-color: #27ae60 !important; //ca marche pas si je met pas !important donc je le laisse
   box-shadow: 0 0 10px rgba(39, 174, 96, 0.3) !important;
   outline: none;
 }
 
-/* Suppression des flèches sur les inputs number pour un look plus propre */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Bouton de calcul */
 .btn-primary {
   width: 100%;
   padding: 15px;
-  background-color: #27ae60 !important; /* Vert poker */
+  background-color: #27ae60 !important;
   border: none !important;
   border-radius: 6px !important;
   color: white !important;
@@ -78,25 +70,23 @@ input::-webkit-inner-spin-button {
   opacity: 0.6;
 }
 
-/* La boîte de résultats */
 .resultats {
   margin-top: 20px;
+  margin-bottom: 100px;
   padding: 15px;
-  background: #111;         /* Fond noir */
-  border: 2px solid #27ae60; /* Bordure verte simple */
+  background: #111;
+  border: 2px solid #27ae60;
   border-radius: 8px;
-  text-align: center;       /* Texte centré */
+  text-align: center;
   font-family: 'Balatro', cursive !important;
 }
 
-/* Le texte à l'intérieur */
 .resultats p {
   color: white;
   margin: 10px 0;
   font-size: 1.2rem;
 }
 
-/* On met juste les chiffres en jaune pour qu'ils ressortent */
 .resultats span {
   color: #f1c40f;
 }

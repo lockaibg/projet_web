@@ -1,16 +1,16 @@
 /* Le conteneur principal qui va espacer les îlots */
 .liste_mains {
+  background: #1a1a1a;
   display: flex;
-  flex-wrap: wrap; /* Pour passer à la ligne si pas assez de place */
-  gap: 20px; /* Espace entre les îlots */
+  flex-wrap: wrap;
+  gap: 20px;
   padding: 20px;
-  background-color: #f0f2f5; /* Un fond gris léger pour faire ressortir les îlots blancs */
   min-height: 100vh;
 }
 
 /* L'îlot (chaque main) */
 .main {
-  background: white;
+  background-color: white;
   border-radius: 15px; /* Coins arrondis */
   padding: 20px;
   min-width: 300px;

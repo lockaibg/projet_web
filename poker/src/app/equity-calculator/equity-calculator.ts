@@ -35,6 +35,10 @@ export class EquityCalculator implements OnInit {
   calculateEquity() {
     this.nbOuts = this.equityForm.get('outs')?.value;
     this.nbChances = this.equityForm.get('chances')?.value;
+    if(this.nbChances < 1 || this.nbChances > 2) {
+      this.equity = -1;
+      return;
+    }
     this.montantPot = this.equityForm.get('montantPot')?.value;
     this.montantMise = this.equityForm.get('montantMise')?.value;
     if(this.nbChances  == 1) {

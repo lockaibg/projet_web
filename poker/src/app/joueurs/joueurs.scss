@@ -1,0 +1,69 @@
+.page-joueurs {
+  padding: 40px 20px;
+  background-color: #1a1a1a; /* Fond sombre */
+  min-height: 100vh;
+}
+
+.titre {
+  text-align: center;
+  font-family: 'Balatro', cursive !important;
+  color: darkgreen !important;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+.grille-joueurs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.carte-joueur {
+  background: #222;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.carte-joueur:hover {
+  transform: translateY(-10px);
+  border-color: #27ae60;
+}
+
+.image-slot {
+  width: 100%;
+  height: 200px;
+  background-color: #333; /* Couleur en attendant l'image */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* L'image remplit le slot sans se déformer */
+}
+
+.contenu {
+  padding: 20px;
+  text-align: center;
+}
+
+.contenu h3 {
+  font-family: 'Balatro', cursive !important;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+
+.description {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}

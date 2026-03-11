@@ -2,7 +2,7 @@
 .hero {
   text-align: center;
   padding: 40px;
-  color: white;
+  color: black;
   background: #0f5132;
 }
 
@@ -22,13 +22,19 @@
 }
 
 .features {
+
   display: flex;
   justify-content: space-around;
-  margin-top: 0px;
   background: #0f5132;
+  padding-bottom:100px;
 }
 
 .feature {
+  border-radius:15px;
+  overflow: hidden;
   width: 30%;
   text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #0d0d0d 0%, #2c3e50 100%);
 }
+
